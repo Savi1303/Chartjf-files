@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="chart.css">
+    <title>Getting Started with Chart JS with SAVI</title>
+  </head>
+  <body>
+    <div class="chartMenu">
+      <p>SAMPLE CHARTJS FILE</p>
+    </div>
+    <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart"></canvas>
+        <button class="btn" onclick="updateChart()">Fetch</button>
+      </div>
+    </div>
+    <script src="chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script>
+    // setup 
+    const data = {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      datasets: [{
+        label: 'Weekly Sales',
+        data: [18, 12, 6, 9, 12, 3, 9],
+        backgroundColor: [],
+        borderColor: [
+          'rgba(25, 26, 14, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(25, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(13, 102, 255, 1)',
+          'rgba(55, 19, 64, 1)',
+          'rgba(0, 0, 0, 1)'
+        ],
+        borderWidth: 3
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+    </script>
+
+  </body>
+</html>
