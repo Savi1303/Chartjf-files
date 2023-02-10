@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif;
+}
+
+.chartMenu {
+  width: 100vw;
+  height: 40px;
+  background: #a01f1f;
+  color: rgb(45, 148, 19);
+}
+ 
+.chartBox {
+  width: 1200px;
+  margin-left: 13vh;
+}
+.container {
+  margin-left: 60vh;
+  width: 45%;
+}

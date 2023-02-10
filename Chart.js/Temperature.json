@@ -1,0 +1,39 @@
+{ "months_temperature": [
+          {
+          "date": "January",
+          "high": 39,
+          "low": 78
+         },
+         {
+          "date": "February",
+          "high": 52,
+          "low": 62
+         },
+         {
+          "date": "March",
+          "high": 60,
+          "low": 50
+         },
+         {
+          "date": "April",
+          "high": 68,
+          "low": 49
+         },
+         {
+          "date": "May",
+          "high": 62,
+          "low": 53
+         },
+         {
+          "date": "June",
+          "high": 50,
+          "low": 64
+         },
+         {
+          "date": "July",
+          "high": 36,
+          "low": 71
+         }
+        ]
+      }
+    
